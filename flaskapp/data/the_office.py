@@ -1,0 +1,22 @@
+
+the_office_people = [
+    'Michel Scott'
+    ,'Dwith Schrute'
+    ,'Jim Halper'
+    ,'Pamela Beisley'
+    ,'Meredith'
+    ,'Kevin Malone'
+    ,'Oscar Martinez'
+    ,'Erin'
+    ,'Ellie'
+    ,'David Wallace'
+    ,'Jean'
+    ,'Philips'
+    ,'Standley Hugson'
+    ,'Andrew Bernard'
+    ,'Robert California'
+    ,'Angela'
+    ,'Kelly Kapour'
+    ,'Ryan'
+    ,'Gabe'
+]
