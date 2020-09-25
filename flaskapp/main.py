@@ -3,6 +3,7 @@ from service_layer import my_service
 
 app = Flask(__name__)
 
+
 @app.route("/", methods=['GET'])
 def hello_www():
     return jsonify("Hello World from local :DD")
@@ -17,6 +18,7 @@ def how_are_you():
 
     return jsonify(response_data)
 
+
 if __name__ == '__main__':
-      app.run(debug=True, host='0.0.0.0', port=5005)
+      app.run(debug=True, host='0.0.0.0', port=8080)
       # export PYTHONPATH=$(pwd)
