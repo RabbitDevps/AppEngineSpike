@@ -1,23 +1,18 @@
 from flask import Flask, jsonify, request
-import pandas as pd
-
+import product.service
 
 app = Flask(__name__)
 
 
 @app.route("/", methods=['GET'])
 def hello_www():
-    return jsonify("Hello from GCP, Using Pandas test")
+    return jsonify("Hello from GCP")
 
 
-@app.route("/api/dataframe", methods=['GET'])
-def get_simple_dataframe():
-    df = pd.DataFrame({
-        'col1': [1,2,3],
-        'col2': [4,5,6],
-        'col3': [7,8,9],
-    })
-    return df.to_json()
+@app.route("/api/products/products", methods=['GET'])
+def get_products():
+    pass
+
 
 
 if __name__ == '__main__':
