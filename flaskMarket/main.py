@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-import product.service
+import product.service as product_service
 
 app = Flask(__name__)
 
@@ -11,7 +11,8 @@ def hello_www():
 
 @app.route("/api/products/products", methods=['GET'])
 def get_products():
-    pass
+    products = product_service.get_products()
+    return jsonify(products)
 
 
 
