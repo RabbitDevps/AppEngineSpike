@@ -1,5 +1,7 @@
 from flask import Flask, jsonify, request
 import product.service as product_service
+from product.productSerializer import ProductSerializer
+import json
 
 app = Flask(__name__)
 
@@ -12,8 +14,8 @@ def hello_www():
 @app.route("/api/products/products", methods=['GET'])
 def get_products():
     products = product_service.get_products()
-    return jsonify(products)
-
+    products_json = [product.__dict__ for product in products]
+    return jsonify(products_json)
 
 
 if __name__ == '__main__':

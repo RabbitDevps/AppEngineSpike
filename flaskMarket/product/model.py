@@ -7,4 +7,10 @@ class Product:
         self.price = price
         self.description = description
 
+    def __repr__(self):
+        return f"{self.name} {self.code} {self.price} {self.description}"
+
+    def __str__(self):
+        return f"{self.name} {self.code} {self.price} {self.description}"
+
 
