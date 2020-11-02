@@ -13,4 +13,5 @@ class Product:
     def __str__(self):
         return f"{self.name} {self.code} {self.price} {self.description}"
 
-
+    def __eq__(self, other):
+        return self.code == other.code
